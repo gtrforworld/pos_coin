@@ -10,10 +10,10 @@
 - verify that getchaintips now returns two chain tips.
 """
 
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import UlmexTestFramework
 from test_framework.util import assert_equal
 
-class GetChainTipsTest (PivxTestFramework):
+class GetChainTipsTest (UlmexTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 

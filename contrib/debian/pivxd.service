@@ -1,23 +1,23 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit pivxd.service
+# $ systemctl edit ulmexd.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/pivx/pivx.conf
+# /etc/ulmex/ulmex.conf
 
 [Unit]
-Description=PIVX daemon
+Description=ULMEX daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/pivxd -daemon -datadir=/var/lib/pivx -conf=/etc/pivx/pivx.conf -pid=/run/pivxd/pivxd.pid
-# Creates /run/pivxd owned by pivx
-RuntimeDirectory=pivxd
-User=pivx
+ExecStart=/usr/bin/ulmexd -daemon -datadir=/var/lib/ulmex -conf=/etc/ulmex/ulmex.conf -pid=/run/ulmexd/ulmexd.pid
+# Creates /run/ulmexd owned by ulmex
+RuntimeDirectory=ulmexd
+User=ulmex
 Type=forking
-PIDFile=/run/pivxd/pivxd.pid
+PIDFile=/run/ulmexd/ulmexd.pid
 Restart=on-failure
 
 # Hardening measures

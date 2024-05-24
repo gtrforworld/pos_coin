@@ -1,18 +1,18 @@
 // Copyright (c) 2014-2021 The Bitcoin developers
-// Copyright (c) 2017-2021 The PIVX Core developers
+// Copyright (c) 2017-2021 The ULMEX Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_CHAINPARAMSBASE_H
-#define PIVX_CHAINPARAMSBASE_H
+#ifndef ULMEX_CHAINPARAMSBASE_H
+#define ULMEX_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between pivx-cli and pivxd)
- * of a given instance of the Pivx system.
+ * CBaseChainParams defines the base parameters (shared between ulmex-cli and ulmexd)
+ * of a given instance of the Ulmex system.
  */
 class CBaseChainParams
 {
@@ -63,4 +63,4 @@ void SelectBaseParams(const std::string& chain);
  */
 std::string ChainNameFromCommandLine();
 
-#endif // PIVX_CHAINPARAMSBASE_H
+#endif // ULMEX_CHAINPARAMSBASE_H
